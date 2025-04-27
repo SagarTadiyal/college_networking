@@ -32,7 +32,7 @@ const Upload = ({ loading, setLoading, setSubjectTitle, setUploadData, setSubjec
             const formData = new FormData();
             formData.append("file", file);
             formData.append("fileName", file.name);
-            formData.append("publicKey", "public_8nVtT/3HQHMbtctTrzsgalBp9YE="); // Replace with yours
+            formData.append("publicKey", "public_893x9ti7troid46cxM0kqgEnYkc="); // Replace with yours
             formData.append("signature", auth.signature);
             formData.append("expire", auth.expire);
             formData.append("token", auth.token);

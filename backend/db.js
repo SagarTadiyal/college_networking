@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // const mongoURL = 'mongodb://localhost:27017/Networking_Project';
-const mongoURL = 'mongodb+srv://Ashish:Rawat098@cluster0.5yazevo.mongodb.net/CSN';
+const mongoURL ='mongodb+srv://sagar:sagarbhai@collegesocial.tdlzt.mongodb.net/CSN';
 mongoose.connect(mongoURL, {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,

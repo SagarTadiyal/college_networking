@@ -11,7 +11,8 @@ import multer from "multer";
 import fs from 'fs'
 import ImageKit from "imagekit";
 import adminRoute from './routes/admin.route.js'
-
+import profileRoutes from './routes/profile.routes.js'
+;
 dotenv.config();
 const app = express();
 app.use(
@@ -32,12 +33,14 @@ app.get("/", (req, res) => {
 // routes
 app.use("/user", userRouter);
 app.use("/auth", authRouter);
-app.use("/admin",adminRoute)
+app.use("/admin",adminRoute);
+// profile routes is here
+app.use("/profile", profileRoutes);
 
 const imagekit = new ImageKit({
-  publicKey: "public_8nVtT/3HQHMbtctTrzsgalBp9YE=",
-  privateKey: "private_3sY0i/MxlDefBMPUqCjk8mKoJuA=",
-  urlEndpoint: "https://ik.imagekit.io/ashish2112",
+  publicKey: "public_893x9ti7troid46cxM0kqgEnYkc=",
+  privateKey: "private_MYqDXz63CUehEe+Wq6Rcy4dv6gI=",
+  urlEndpoint: "https://ik.imagekit.io/sagar2231/",
 });
 
 app.get("/authUpload",(req,res)=>{
