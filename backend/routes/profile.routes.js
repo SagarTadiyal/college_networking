@@ -1,15 +1,14 @@
-const express = require('express');
-const router = express.Router();
-const profileController = require('../controllers/profile.controller');
-const upload = require('../middlewares/upload');
+// import express from 'express';
+// const router = express.Router();
+// import profileController from '../controllers/profile.controller.js';
+// import upload from '../middleware/multer.js';
+// // Get all profiles (admin only)
+// router.get('/', profileController.getAllProfiles);
 
-// Get all profiles (admin only)
-router.get('/', profileController.getAllProfiles);
+// // Get single profile
+// router.get('/:id', profileController.getProfile);
 
-// Get single profile
-router.get('/:id', profileController.getProfile);
+// // Update profile
+// router.put('/:id', upload.single('profileImage'), profileController.updateProfile);
 
-// Update profile
-router.put('/:id', upload.single('profileImage'), profileController.updateProfile);
-
-module.exports = router;
+// export default router;
