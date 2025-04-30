@@ -37,6 +37,8 @@ app.use("/admin",adminRoute);
 // profile routes is here
 // app.use("/profile", profileRoutes);
 
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 const imagekit = new ImageKit({
   publicKey: "public_893x9ti7troid46cxM0kqgEnYkc=",
   privateKey: "private_MYqDXz63CUehEe+Wq6Rcy4dv6gI=",
