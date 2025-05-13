@@ -16,6 +16,8 @@ import StudyMaterial from './pages/StudyMaterial'
 import DashboardLayout from './Layout/DashboardLayout'
 import Discussion from './pages/Discussion'
 import PYQs from './pages/PYQs'
+import Profile from './pages/Profile'
+
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,11 @@ const router = createBrowserRouter([
       {
         element: <PrivateRoute />,
         children: [
+          {
+            path: 'profile',
+            element: <Profile />
+          },
+          
           {
             path: "dashboard",
             element: <DashboardLayout />,
